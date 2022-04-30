@@ -18,7 +18,7 @@ const contestData = async () => {
 
 			if(contestDate > date && i === 0){
 				i++;
-				upcoming +=`<div class="d-flex flex-row justify-content-lg-around mt-5 mb-5 text-center align-items-center ">
+				upcoming +=`<div class="d-flex flex-row justify-content-lg-around mt-5 mb-5 text-center align-items-center wrap">
 							<ul class="list-style flex-column lead text-wrap">
 								<li class="list-group-item list-head text-light"><h3 class="display-6">${contest.name}</h3></li>
 							 	<li class="list-group-item list-items text-dark">${new Date(contest.start_time).toLocaleString()}</li>
