@@ -20,6 +20,12 @@
 .wrap {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center !important;
 	}
+.ul {
+	margin-top: 1.5em;	
+    margin-bottom: 1.5em;	
+
+}
 }
 

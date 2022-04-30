@@ -19,7 +19,7 @@ const contestData = async () => {
 			if(contestDate > date && i === 0){
 				i++;
 				upcoming +=`<div class="d-flex flex-row justify-content-lg-around mt-5 mb-5 text-center align-items-center wrap">
-							<ul class="list-style flex-column lead text-wrap">
+							<ul class="list-style flex-column lead text-wrap ul">
 								<li class="list-group-item list-head text-light"><h3 class="display-6">${contest.name}</h3></li>
 							 	<li class="list-group-item list-items text-dark">${new Date(contest.start_time).toLocaleString()}</li>
 							 	<li class="list-group-item list-item3 text-dark font-weight-bold">Contest Link: <a class="text-dark" href='${contest.url}' target="_blank">${contest.site}</a></li>
@@ -27,7 +27,7 @@ const contestData = async () => {
 			 }else if(contestDate > date && i < 4){
 			 					i++;
 			 					upcoming += 
-							`<ul class="list-style flex-column lead text-wrap">
+							`<ul class="list-style flex-column lead text-wrap ul">
 								<li class="list-group-item list-head text-light"><h3 class="display-6">${contest.name}</h3></li>
 							 	<li class="list-group-item list-items text-dark">${new Date(contest.start_time).toLocaleString()}</li>
 							 	<li class="list-group-item list-item3 font-weight-bold text-dark">Contest Link: <a class="text-dark" href='${contest.url}' target="_blank">${contest.site}</a></li>
